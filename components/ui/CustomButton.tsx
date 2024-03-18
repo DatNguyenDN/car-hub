@@ -26,10 +26,16 @@ const CustomButton = ({
   title,
   handleClick,
   containerStyles,
+  // btnType,
   ...props
 }: CustomeButtonProps) => {
   return (
-    <Button {...props} onClick={handleClick} className={`${containerStyles}`}>
+    <Button
+      {...props}
+      onClick={handleClick}
+      // type={btnType | "button"}
+      className={`${containerStyles}`}
+    >
       {title}
     </Button>
   );
